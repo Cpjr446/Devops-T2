@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  user-service:
+    build: ./user-service
+    ports:
+      - "3000:3000"
+
+  product-service:
+    build: ./product-service
+    ports:
+      - "3001:3001"
+
+  cart-service:
+    build: ./cart-service
+    ports:
+      - "3002:3002"
